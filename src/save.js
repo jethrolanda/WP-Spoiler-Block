@@ -1,3 +1,6 @@
+import { useEffect } from '@wordpress/element';
+import { useEntityRecord } from '@wordpress/core-data';
+
 /**
  * React hook that is used to mark the block wrapper element.
  * It provides all the necessary props like the class name.
@@ -15,10 +18,11 @@ import { useBlockProps } from '@wordpress/block-editor';
  *
  * @return {WPElement} Element to render.
  */
-export default function save() {
+export default function save({attributes}) {
+	
 	return (
 		<p { ...useBlockProps.save() }>
-			{ 'Wp Spoiler Block – hello from the saved content!' }
+			<span className="wps-spoiler">{attributes?.content}</span>
 		</p>
 	);
 }

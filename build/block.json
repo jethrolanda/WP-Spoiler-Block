@@ -1,7 +1,7 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 2,
-  "name": "create-block/wp-spoiler-block",
+  "name": "wp-spoiler/wp-spoiler-block",
   "version": "0.1.0",
   "title": "Wp Spoiler Block",
   "category": "widgets",
@@ -9,6 +9,20 @@
   "description": "Example block scaffolded with Create Block tool.",
   "supports": {
     "html": false
+  },
+  "attributes": {
+    "editMode": {
+      "type": "boolean",
+      "default": true
+    },
+    "content": {
+      "type": "string",
+      "default": ""
+    },
+    "value": {
+      "type": "number",
+      "default": 0
+    }
   },
   "textdomain": "wp-spoiler-block",
   "editorScript": "file:./index.js",

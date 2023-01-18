@@ -7,10 +7,26 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-.wp-block-create-block-wp-spoiler-block {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
+.wps-spoiler {
+  color: transparent;
+  text-shadow: 0 0 13px rgba(0, 0, 0, 0.4);
+}
+
+.wps-spoiler-block {
+  width: 100%;
+}
+
+.wps-spoiler-choices {
+  padding: 10px;
+  margin-bottom: 10px;
+  max-height: 250px;
+  overflow-y: scroll;
+  border: 1px solid #eee;
+}
+
+.wps-spoiler-submit {
+  display: block;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style-index.css.map*/
